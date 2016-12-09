@@ -1,0 +1,48 @@
+//
+//  PrefixHeader.pch
+//  InterestingNews
+//
+//  Created by m n on 16/11/22.
+//  Copyright © 2016年 m n. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 两个简易宏
+// 方法、属性不用加mas_
+#define MAS_SHORTHAND
+// equalTo可以用基本类型
+#define MAS_SHORTHAND_GLOBALS
+
+//通用宏
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#import <Masonry.h>
+#import <SVProgressHUD.h>
+#import <AFNetworking.h>
+#import <YYModel.h>
+#import <UIImageView+WebCache.h>
+#import <UIButton+WebCache.h>
+#import <UITableView+FDTemplateLayoutCell.h>
+#import "HYPageView.h"
+#import <SVPullToRefresh.h>
+#import <XRCarouselView.h>
+
+//define
+//#define RGB(r, g, b)                        RGBA(r, g, b, 1.0f)
+#define RGB(r, g, b) [UIColor colorWithRed:r green:g blue:b alpha:1.0f]
+
+// helper
+#import "ZYTransitionHelper.h"
+#import "ZYAKHelper.h"
+
+// macro&&category
+#import "ZYUserDefaults.h"
+#import "NSString+Additions.h"
+
+#endif /* PrefixHeader_pch */

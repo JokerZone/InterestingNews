@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F2009" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="invitationCell" id="KGk-i7-Jjw" customClass="ZYFirstTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personal_red_package.png" translatesAutoresizingMaskIntoConstraints="NO" id="PfC-uu-upU">
+                        <rect key="frame" x="15" y="8" width="35" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="4rT-2y-xr4"/>
+                            <constraint firstAttribute="height" constant="44" id="LFl-vh-N3E"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请好友 疯狂赚金币" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eua-Ve-v87">
+                        <rect key="frame" x="58" y="8" width="144" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5Jt-6h-MPm"/>
+                            <constraint firstAttribute="width" constant="144" id="IXu-q5-xHn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每收一个徒弟，可获2500金币！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMN-j5-9VF">
+                        <rect key="frame" x="58" y="31" width="163" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Zhx-12-MJz"/>
+                            <constraint firstAttribute="width" constant="163" id="kWW-l1-IXa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="0.0075291615441689386" blue="0.033027932496675794" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personal_back_gray.png" translatesAutoresizingMaskIntoConstraints="NO" id="Erk-9V-WGx">
+                        <rect key="frame" x="352" y="22" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="GBg-q2-CtV"/>
+                            <constraint firstAttribute="height" constant="15" id="YiT-p2-mol"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eua-Ve-v87" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9OI-cI-j8t"/>
+                    <constraint firstItem="PfC-uu-upU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="NWb-Xq-W22"/>
+                    <constraint firstAttribute="trailing" secondItem="Erk-9V-WGx" secondAttribute="trailing" constant="8" id="O8T-Fh-eIu"/>
+                    <constraint firstItem="eua-Ve-v87" firstAttribute="leading" secondItem="PfC-uu-upU" secondAttribute="trailing" constant="8" id="Obe-qU-p31"/>
+                    <constraint firstItem="Erk-9V-WGx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="YNJ-X0-xH0"/>
+                    <constraint firstItem="PfC-uu-upU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="akO-iN-Qe6"/>
+                    <constraint firstItem="sMN-j5-9VF" firstAttribute="leading" secondItem="PfC-uu-upU" secondAttribute="trailing" constant="8" id="rrZ-dQ-wPD"/>
+                    <constraint firstItem="sMN-j5-9VF" firstAttribute="top" secondItem="eua-Ve-v87" secondAttribute="bottom" constant="2" id="tH7-Xz-kfc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="201.5" y="213"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="personal_back_gray.png" width="12" height="12"/>
+        <image name="personal_red_package.png" width="32" height="37"/>
+    </resources>
+</document>
